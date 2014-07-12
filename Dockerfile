@@ -19,7 +19,7 @@ RUN echo "root:${ROOTPASSWORD}" |chpasswd
 #RUN echo "XForwarding yes">>/etc/ssh/sshd_config
 ENV DEBIAN_FRONTEND dialog
 
-ADD ninix/mayura_final.nar /root/mayura_final.nar
+ADD ninix/ /root/
 
 # Set environment variables.
 ENV HOME /root

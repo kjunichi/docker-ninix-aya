@@ -22,6 +22,8 @@ docker run -d -p 20022:22 kjunichi/ninixaya
 
 # コンテナを使う
 
+パスワードは「ninix123」
+
 ## OSX
 
 ```
@@ -33,3 +35,7 @@ ssh -X root@$(boot2docker ip 2>/dev/null) -p 20022
 ```
 ssh -X root@localhost -p 20022
 ```
+
+# 既知の問題
+
+SSTPもsshでコンテナに入らないと出来ない

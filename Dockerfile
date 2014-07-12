@@ -4,7 +4,7 @@ RUN apt-get update
 RUN apt-get install -y libbz2-dev ninix-aya openssh-server x11-apps
 ENV DEBIAN_FRONTEND noninteractive
 RUN apt-get install -y ubuntu-desktop
-RUN apt-get install -y language-pack-ja git
+RUN apt-get install -y language-pack-ja git telnet
 
 RUN /etc/init.d/ssh start
 RUN /etc/init.d/ssh stop
